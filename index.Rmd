@@ -1,0 +1,54 @@
+---
+title       : Datasets Explorer
+subtitle    : presentation about the shiny app
+author      : 
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+ext_widgets : {rCharts: [libraries/nvd3]}
+widgets     : [bootstrap, quiz, shiny, interactive]
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+<style>
+.title-slide {background-color: #FFF}
+</style>
+
+## Datasets Explorer - Overview
+
+![width] (assets/img/shinyApp.png)
+
+--- .class #id
+
+## More about the app - Datasets
+
+This app allows users to choose a dataset from a pre-selected set of datasets and view a plot of that dataset. Users can also specify the number of observations to view from the chosen dataset.
+
+The three datasets are:
+- pressure
+- rock
+- cars
+
+--- .class #id 
+
+## Demo
+
+Live demonstration of one of the charts used in the app.
+- Scatter chart illustrates the relationship between the stopping distance and the speed in the cars dataset.
+
+```{r echo = F, results = 'asis'}
+require(googleVis)
+G1 <- gvisScatterChart(cars,options=list(title="Scatter Chart for datasets",hAxis="{title:'speed(mph'}",vAxis="{title:'dist(ft)'}",legend="top",   width=600,height=400))
+print(G1,'chart')
+```                                    
+--- .class #id 
+## URL of the Shiny App
+Access the Shiny App Course Project at:
+[Datasets Explorer] (https://melbadri.shinyapps.io/datasetsExplorer/)
+
+--- .class #id 
+
+## URL to the Shiny App
+Access the Shiny App Course Project at:
+[Datasets Explorer] (https://melbadri.shinyapps.io/datasetsExplorer/)

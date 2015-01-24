@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Datasets Explorer</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Datasets Explorer">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/interactive/css/aceeditor.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/nv.d3.css"></link>
+<link rel=stylesheet href="libraries/widgets/nvd3/css/rNVD3.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  <script src="libraries/widgets/nvd3/js/jquery-1.8.2.min.js"></script>
+<script src="libraries/widgets/nvd3/js/d3.v3.min.js"></script>
+<script src="libraries/widgets/nvd3/js/nv.d3.min-new.js"></script>
+<script src="libraries/widgets/nvd3/js/fisheye.js"></script>
+
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Datasets Explorer</h1>
+    <h2>presentation about the shiny app</h2>
+    <p><br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide {background-color: #FFF}
+</style>
+
+<h2>Datasets Explorer - Overview</h2>
+
+<p><img src="assets/img/shinyApp.png" alt="width"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>More about the app - Datasets</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This app allows users to choose a dataset from a pre-selected set of datasets and view a plot of that dataset. Users can also specify the number of observations to view from the chosen dataset.</p>
+
+<p>The three datasets are:</p>
+
+<ul>
+<li>pressure</li>
+<li>rock</li>
+<li>cars</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Demo</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Live demonstration of one of the charts used in the app.</p>
+
+<ul>
+<li>Scatter chart illustrates the relationship between the stopping distance and the speed in the cars dataset.</li>
+</ul>
+
+<!-- ScatterChart generated in R 3.1.2 by googleVis 0.5.7 package -->
+
+<!-- Sat Jan 24 15:52:04 2015 -->
+
+<!-- jsHeader -->
+
+<script type="text/javascript">
+ 
+// jsData 
+function gvisDataScatterChartID7e24ddb9fac () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+ 4,
+2 
+],
+[
+ 4,
+10 
+],
+[
+ 7,
+4 
+],
+[
+ 7,
+22 
+],
+[
+ 8,
+16 
+],
+[
+ 9,
+10 
+],
+[
+ 10,
+18 
+],
+[
+ 10,
+26 
+],
+[
+ 10,
+34 
+],
+[
+ 11,
+17 
+],
+[
+ 11,
+28 
+],
+[
+ 12,
+14 
+],
+[
+ 12,
+20 
+],
+[
+ 12,
+24 
+],
+[
+ 12,
+28 
+],
+[
+ 13,
+26 
+],
+[
+ 13,
+34 
+],
+[
+ 13,
+34 
+],
+[
+ 13,
+46 
+],
+[
+ 14,
+26 
+],
+[
+ 14,
+36 
+],
+[
+ 14,
+60 
+],
+[
+ 14,
+80 
+],
+[
+ 15,
+20 
+],
+[
+ 15,
+26 
+],
+[
+ 15,
+54 
+],
+[
+ 16,
+32 
+],
+[
+ 16,
+40 
+],
+[
+ 17,
+32 
+],
+[
+ 17,
+40 
+],
+[
+ 17,
+50 
+],
+[
+ 18,
+42 
+],
+[
+ 18,
+56 
+],
+[
+ 18,
+76 
+],
+[
+ 18,
+84 
+],
+[
+ 19,
+36 
+],
+[
+ 19,
+46 
+],
+[
+ 19,
+68 
+],
+[
+ 20,
+32 
+],
+[
+ 20,
+48 
+],
+[
+ 20,
+52 
+],
+[
+ 20,
+56 
+],
+[
+ 20,
+64 
+],
+[
+ 22,
+66 
+],
+[
+ 23,
+54 
+],
+[
+ 24,
+70 
+],
+[
+ 24,
+92 
+],
+[
+ 24,
+93 
+],
+[
+ 24,
+120 
+],
+[
+ 25,
+85 
+] 
+];
+data.addColumn('number','speed');
+data.addColumn('number','dist');
+data.addRows(datajson);
+return(data);
+}
+ 
+// jsDrawChart
+function drawChartScatterChartID7e24ddb9fac() {
+var data = gvisDataScatterChartID7e24ddb9fac();
+var options = {};
+options["allowHtml"] = true;
+options["title"] = "Scatter Chart for datasets";
+options["hAxis"] = {title:'speed(mph'};
+options["vAxis"] = {title:'dist(ft)'};
+options["legend"] = "top";
+options["width"] =    600;
+options["height"] =    400;
+
+    var chart = new google.visualization.ScatterChart(
+    document.getElementById('ScatterChartID7e24ddb9fac')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+ 
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "corechart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartScatterChartID7e24ddb9fac);
+})();
+function displayChartScatterChartID7e24ddb9fac() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+ 
+// jsFooter
+</script>
+ 
+
+<!-- jsChart -->  
+
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartScatterChartID7e24ddb9fac"></script>
+ 
+
+<!-- divChart -->
+
+<div id="ScatterChartID7e24ddb9fac" 
+  style="width: 600; height: 400;">
+</div>
+
+<p>--- .class #id </p>
+
+<h2>URL of the Shiny App</h2>
+
+<p>Access the Shiny App Course Project at:
+<a href="https://melbadri.shinyapps.io/datasetsExplorer/">Datasets Explorer</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>URL to the Shiny App</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Access the Shiny App Course Project at:
+<a href="https://melbadri.shinyapps.io/datasetsExplorer/">Datasets Explorer</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title=''>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='More about the app - Datasets'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Demo'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='URL to the Shiny App'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+<script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/interactive/js/ace/js/ace.js"></script>
+<script src="libraries/widgets/interactive/js/opencpu-0.5.js"></script>
+<script src="libraries/widgets/interactive/js/interactive.js"></script>
+
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  
+  <script src="shared/shiny.js" type="text/javascript"></script>
+  <script src="shared/slider/js/jquery.slider.min.js"></script>
+  <script src="shared/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="shared/slider/css/jquery.slider.min.css"></link>
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
